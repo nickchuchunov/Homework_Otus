@@ -8,11 +8,6 @@ namespace DigitalRiddles.GameGuessNumber
 {
     public interface IGuessNumber
     {
-
      public   void StartGamesNumber();
-
-       
-
-
     }
 }

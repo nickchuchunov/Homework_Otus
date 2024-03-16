@@ -8,7 +8,6 @@ namespace DigitalRiddles.RandomGenerator
 {
     public interface IGeneratorRndom
     {
-
         public int RandomGenerator(int value1, int value2);
     }
 }

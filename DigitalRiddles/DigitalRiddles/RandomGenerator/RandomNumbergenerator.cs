@@ -9,21 +9,15 @@ namespace DigitalRiddles.RandomGenerator
 {
     public class RandomNumbergenerator : IGeneratorRndom
     {
-
-
-
-
           Random rnd;
-
         public RandomNumbergenerator()
           {
-               rnd = new Random();
+           rnd = new Random();
           }
-        
-         
-      public int RandomGenerator(int value1=0, int value2=100)
+
+        public int RandomGenerator(int value1=0, int value2=100)
         {
-            return new Random().Next(value1, value2);
+          return rnd.Next(value1, value2);
         }
     }
 }

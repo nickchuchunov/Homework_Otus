@@ -1,30 +1,19 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using DigitalRiddles.RandomGenerator;
 using DigitalRiddles.GameGuessNumber;
 
 
+var services = new ServiceCollection();
+services.AddSingleton<IGeneratorRndom, RandomNumbergenerator>( );
+services.AddSingleton<IConsoleGameGuessNumber, ConsoleGameGuessNumber>();
+services.AddSingleton<IGuessNumber, GameGuessNumber> ();
+
+services.BuildServiceProvider();
+var serviceProvider = services.BuildServiceProvider();
+
+new GameGuessNumber(serviceProvider.GetService<IGeneratorRndom>(), serviceProvider.GetService<IConsoleGameGuessNumber>()).StartGamesNumber();
 
 
-
-
-
-
-
-HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
-
-
-builder.Services.AddSingleton<IGeneratorRndom, RandomNumbergenerator>( );
-builder.Services.AddSingleton<IUserInterfaceGameGuessNumber, UserInterfaceGameGuessNumber>();
-builder.Services.AddSingleton<IGuessNumber, GuessNumber > ();
-
-IHost app = builder.Build();
-
-GuessNumber guessNumber = new GuessNumber(app.Services);
-
-app.Run();
-
-app.Start();
 
 
 
