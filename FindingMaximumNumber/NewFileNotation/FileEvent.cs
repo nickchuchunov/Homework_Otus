@@ -11,9 +11,8 @@ namespace FindingMaximumNumber.NewFileNotation
         internal FileEvent() 
         {
             Message = SubscriberFunction;
-
-
         }
+
       internal delegate void EventMesseg(string NewFile);
       internal  event EventMesseg Message;
       void SubscriberFunction(string value) { Console.WriteLine(value); }
@@ -29,13 +28,9 @@ namespace FindingMaximumNumber.NewFileNotation
                 foreach (string directoryFile in directoryFileEnumerable) 
                 {
                     if (directoryFile != null) { Message(directoryFile); }
-
-                    
                 }
-
             }
             else { Message("Ввден не правильный адрес директории"); Console.WriteLine("Ввден не правильный адрес директории"); throw new ArgumentException("Ввден не правильный адрес директории");  }
-
        }
 
     }

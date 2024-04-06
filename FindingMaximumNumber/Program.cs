@@ -21,7 +21,6 @@ FileEvent fileEvent = new FileEvent();
 Console.WriteLine("Укажите путь к директории");
 String directoryTreak  = Console.ReadLine();
 fileEvent.FileSearch(directoryTreak);
-void SubscriberFunction(string value) { Console.WriteLine(value); }
-fileEvent.Message += SubscriberFunction;
+
 
 
