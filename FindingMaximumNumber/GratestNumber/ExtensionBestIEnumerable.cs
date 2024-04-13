@@ -11,13 +11,23 @@ namespace FindingMaximumNumber.GratestNumber
     {
         public static float GetMax1(this IEnumerable collection, Func<string, float> convertToNumber) 
         {
+
             float maxNumber = float.MinValue;
-            foreach (string item in collection) 
+
+            if (collection.GetEnumerator().MoveNext()==true ) 
             {
-                if ((convertToNumber(item) is float) &&(convertToNumber(item)> maxNumber))
+                foreach (string item in collection)
                 {
-                    maxNumber = convertToNumber(item);
+                    var number = convertToNumber(item);
+                    if ((number is float) && (number > maxNumber))
+                    {
+                        maxNumber = number;
+                    }
                 }
+            }
+            else
+            {
+                maxNumber = 0; throw new Exception("Коллекция пуста");
             }
             return maxNumber;
         }
