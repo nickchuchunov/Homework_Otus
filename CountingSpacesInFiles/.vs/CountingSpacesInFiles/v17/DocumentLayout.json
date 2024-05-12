@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "L:\\homework_otus\\Homework_Otus\\CountingSpacesInFiles\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D8E5A40F-CB4C-4AE1-818A-2F6A65AD4614}|CountingSpacesInFiles.csproj|L:\\homework_otus\\Homework_Otus\\CountingSpacesInFiles\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8E5A40F-CB4C-4AE1-818A-2F6A65AD4614}|CountingSpacesInFiles.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8E5A40F-CB4C-4AE1-818A-2F6A65AD4614}|CountingSpacesInFiles.csproj|l:\\homework_otus\\homework_otus\\countingspacesinfiles\\countingspacesinfiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8E5A40F-CB4C-4AE1-818A-2F6A65AD4614}|CountingSpacesInFiles.csproj|solutionrelative:countingspacesinfiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 292,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "L:\\homework_otus\\Homework_Otus\\CountingSpacesInFiles\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "L:\\homework_otus\\Homework_Otus\\CountingSpacesInFiles\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACIAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T06:06:05.276Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "cc0928c0-5315-418e-a6f8-4e0d73b78e87",
+        "Display": 1,
+        "X": 26,
+        "Y": 31,
+        "Width": 978,
+        "Height": 733,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CountingSpacesInFiles.cs",
+              "DocumentMoniker": "L:\\homework_otus\\Homework_Otus\\CountingSpacesInFiles\\CountingSpacesInFiles.cs",
+              "RelativeDocumentMoniker": "CountingSpacesInFiles.cs",
+              "ToolTip": "L:\\homework_otus\\Homework_Otus\\CountingSpacesInFiles\\CountingSpacesInFiles.cs",
+              "RelativeToolTip": "CountingSpacesInFiles.cs",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAAAIcAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T21:47:22.486Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
