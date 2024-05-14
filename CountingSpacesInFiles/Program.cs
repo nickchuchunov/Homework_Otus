@@ -19,13 +19,8 @@ namespace CountingSpacesInFiles
             Console.WriteLine("Файлы считываются в массив массивов [] [] -  в каждый массив считываются наименование файла и далее строки из файла ");
             Console.WriteLine("далее подсч итывается  ");
 
-
             Console.WriteLine("Укажите путь к папке с 3 файлами");
             string treac =  Console.ReadLine();
-
-
-            
-
             Stopwatch stopWatch = new Stopwatch();
 
             stopWatch.Start();
