@@ -1,0 +1,15 @@
+L:\homework_otus\Homework_Otus\ParallelCalculationFactorial\bin\Debug\net8.0\ParallelCalculationFactorial.exe
+L:\homework_otus\Homework_Otus\ParallelCalculationFactorial\bin\Debug\net8.0\ParallelCalculationFactorial.deps.json
+L:\homework_otus\Homework_Otus\ParallelCalculationFactorial\bin\Debug\net8.0\ParallelCalculationFactorial.runtimeconfig.json
+L:\homework_otus\Homework_Otus\ParallelCalculationFactorial\bin\Debug\net8.0\ParallelCalculationFactorial.dll
+L:\homework_otus\Homework_Otus\ParallelCalculationFactorial\bin\Debug\net8.0\ParallelCalculationFactorial.pdb
+L:\homework_otus\Homework_Otus\ParallelCalculationFactorial\obj\Debug\net8.0\ParallelCalculationFactorial.GeneratedMSBuildEditorConfig.editorconfig
+L:\homework_otus\Homework_Otus\ParallelCalculationFactorial\obj\Debug\net8.0\ParallelCalculationFactorial.AssemblyInfoInputs.cache
+L:\homework_otus\Homework_Otus\ParallelCalculationFactorial\obj\Debug\net8.0\ParallelCalculationFactorial.AssemblyInfo.cs
+L:\homework_otus\Homework_Otus\ParallelCalculationFactorial\obj\Debug\net8.0\ParallelCalculationFactorial.csproj.CoreCompileInputs.cache
+L:\homework_otus\Homework_Otus\ParallelCalculationFactorial\obj\Debug\net8.0\ParallelCalculationFactorial.sourcelink.json
+L:\homework_otus\Homework_Otus\ParallelCalculationFactorial\obj\Debug\net8.0\ParallelCalculationFactorial.dll
+L:\homework_otus\Homework_Otus\ParallelCalculationFactorial\obj\Debug\net8.0\refint\ParallelCalculationFactorial.dll
+L:\homework_otus\Homework_Otus\ParallelCalculationFactorial\obj\Debug\net8.0\ParallelCalculationFactorial.pdb
+L:\homework_otus\Homework_Otus\ParallelCalculationFactorial\obj\Debug\net8.0\ParallelCalculationFactorial.genruntimeconfig.cache
+L:\homework_otus\Homework_Otus\ParallelCalculationFactorial\obj\Debug\net8.0\ref\ParallelCalculationFactorial.dll
