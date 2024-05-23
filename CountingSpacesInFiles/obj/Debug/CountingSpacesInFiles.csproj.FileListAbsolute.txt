@@ -1,0 +1,7 @@
+L:\homework_otus\Homework_Otus\CountingSpacesInFiles\obj\Debug\CountingSpacesInFiles.csproj.AssemblyReference.cache
+L:\homework_otus\Homework_Otus\CountingSpacesInFiles\obj\Debug\CountingSpacesInFiles.csproj.CoreCompileInputs.cache
+L:\homework_otus\Homework_Otus\CountingSpacesInFiles\bin\Debug\CountingSpacesInFiles.exe.config
+L:\homework_otus\Homework_Otus\CountingSpacesInFiles\bin\Debug\CountingSpacesInFiles.exe
+L:\homework_otus\Homework_Otus\CountingSpacesInFiles\bin\Debug\CountingSpacesInFiles.pdb
+L:\homework_otus\Homework_Otus\CountingSpacesInFiles\obj\Debug\CountingSpacesInFiles.exe
+L:\homework_otus\Homework_Otus\CountingSpacesInFiles\obj\Debug\CountingSpacesInFiles.pdb
