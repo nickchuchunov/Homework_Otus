@@ -2,6 +2,7 @@
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,11 +11,11 @@ namespace ParallelCalculationFactorial.FactorialParallelTreads
     internal class FactorialParallelTreads
     {
 
-       internal ConcurrentDictionary<int, ulong> dictionaryFactorial;
+       internal ConcurrentDictionary<int, BigInteger> dictionaryFactorial;
        
         internal FactorialParallelTreads()
         {
-            dictionaryFactorial = new ConcurrentDictionary<int, ulong>();
+            dictionaryFactorial = new ConcurrentDictionary<int, BigInteger>();
            
         }
 
