@@ -2,6 +2,7 @@
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 using ParallelCalculationFactorial.FactorialParallelTreads;
@@ -11,17 +12,14 @@ namespace ParallelCalculationFactorial.FactorialParallelPLINQ
     internal class FactorialParallelPLINQ
     {
 
-        internal ConcurrentDictionary<int, ulong> dictionaryFactorial;
-
+        internal ConcurrentDictionary<int, BigInteger> dictionaryFactorial;
         Factorial factorial;
-        delegate void delegatFactorial(int value, ConcurrentDictionary<int, ulong> dictionary );
        
         internal FactorialParallelPLINQ()
         {   
-            dictionaryFactorial = new ConcurrentDictionary<int, ulong>();
+            dictionaryFactorial = new ConcurrentDictionary<int, BigInteger>();
             factorial = new Factorial();
         }
-
 
       internal void  FactorialForPlinq(int value1, int value2) 
         {
