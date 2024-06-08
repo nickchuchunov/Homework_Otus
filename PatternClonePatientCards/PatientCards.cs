@@ -1,33 +1,39 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace PatternClonePatientCards
 {
-    internal class PatientCards
+   internal class PatientCards: Patient, IMyCloneable<PatientCards>, ICloneable // У карточки пациента есть Инфорация о пациенте (Patient) а пациент в свою очередь наследует диагноз (Diagnosis)
     {
-        internal Patient patient;
-        internal  Dictionary<string, string> DiseaseHistory; // история болезни Key - врачь, Value - история
-
-        internal PatientCards(Patient _patient)
+        public PatientCards() : base(string.Empty, string.Empty, DateTime.Now)
         {
-            patient = _patient;
-            DiseaseHistory = new Dictionary<string, string>();
+        }
+
+        public  PatientCards MuCloneClass()
+        {
+
+            PatientCards _patientCards = new PatientCards();
+
+            _patientCards.PatientName = base.PatientName;
+            _patientCards.PatientSurname = base.PatientSurname;
+            _patientCards.PatientDateBirth = base.PatientDateBirth;
+            foreach (var p in base.diagnosisData)
+            {
+                _patientCards.AddDiagnosis(p.Key, p.Value);
+            }
+
+            return _patientCards;
         }
 
 
-        internal PatientCards Clone()
+        public new object Clone()
         {
-            Patient patientClone = new Patient(patient.Surname, patient.Name, patient.DateBirth);
-            PatientCards patientCardsClone = new PatientCards(patientClone);
-            foreach (var dictionaryKeyValue in DiseaseHistory) 
-            {
-                patientCardsClone.DiseaseHistory.Add(dictionaryKeyValue.Key, dictionaryKeyValue.Value);
-            }
-
-            return patientCardsClone;
+            return MemberwiseClone();
         }
 
     }
