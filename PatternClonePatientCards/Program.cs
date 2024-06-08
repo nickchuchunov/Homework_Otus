@@ -44,4 +44,12 @@ foreach (var data in patientCardsClone.diagnosisData)
     Console.WriteLine($"Доктор говорит вы больны {data.Key.DoctorName} Такой то вот болезнm {data.Value.Name} ");
 }
 
-// Вывод метод интерфейса ICloneable  в Net 8 способен  клонировать наследуемые свойства класса
+// Сравниваем ссылочные типы клона MuCloneClass и Clone (ICloneable)
+
+bool MuCloneClass = patientCards.diagnosisData.GetHashCode() == patientCardsMuCloneClass.diagnosisData.GetHashCode();
+
+bool Clone = patientCards.diagnosisData.GetHashCode() == patientCardsClone.diagnosisData.GetHashCode();
+
+Console.WriteLine($" Результат стравнения равенства ссылок прототипа и клона MuCloneClass  {MuCloneClass} Результат стравнения равенства ссылок прототипа и клона Clone {Clone} ");
+
+// Вывод метод интерфейса ICloneable не создает ссылочные объекты заново а копирует ссылки прототипа
