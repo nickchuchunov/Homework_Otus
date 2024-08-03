@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ParallelCalculationFactorial")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+84b0a2e4c4aba80f607ab0242b0ba739b059e50f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+558fb91973dbce768be420ac04571977ea5f416a")]
 [assembly: System.Reflection.AssemblyProductAttribute("ParallelCalculationFactorial")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ParallelCalculationFactorial")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

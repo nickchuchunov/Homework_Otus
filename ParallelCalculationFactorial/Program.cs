@@ -10,7 +10,8 @@ Stopwatch stopWatch = new Stopwatch();
 // обычное вычисление факториала без применения распоралелливания и доп потоков
 stopWatch.Start();
 OrdinsryFactorial factorial = new OrdinsryFactorial();
-Dictionary<int, BigInteger> factorialNumbers = factorial.Factorial(1, 4000);
+FactorialType[] factorialTypesArrey = new FactorialType[4000];
+factorial.Factorial(1, 4000, factorialTypesArrey);
 stopWatch.Stop();
 TimeSpan NormalTime = stopWatch.Elapsed;
 stopWatch.Reset();
@@ -24,12 +25,12 @@ TimeSpan TreadsTime = stopWatch.Elapsed;
 stopWatch.Reset();
 
 // факториала считаются параллельно
-stopWatch.Start();
-FactorialParallelPLINQ factorialParallelPLINQ = new FactorialParallelPLINQ();
-factorialParallelPLINQ.FactorialForPlinq(1, 4000);
-stopWatch.Stop();
-TimeSpan PLINQTime = stopWatch.Elapsed;
-stopWatch.Reset();
+  stopWatch.Start();
+  FactorialParallelPLINQ factorialParallelPLINQ = new FactorialParallelPLINQ();
+  factorialParallelPLINQ.FactorialForPlinq(1, 4000);
+  stopWatch.Stop();
+  TimeSpan PLINQTime = stopWatch.Elapsed;
+  stopWatch.Reset();
 
 
 

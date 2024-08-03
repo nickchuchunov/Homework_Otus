@@ -9,8 +9,13 @@ namespace ParallelCalculationFactorial.OrdinaryFactorial
 {
     internal class OrdinsryFactorial
     {
-
-       internal Dictionary<int, BigInteger> Factorial(int value1, int value2 )
+        /// <summary>
+        /// считаем  фактриал последовательно
+        /// </summary>
+        /// <param name="value1"> значение начала диаапазано</param>
+        /// <param name="value2">значение конца диапазона</param>
+        /// <param name="factorialTypesArrey">массив в который записываем результат вычислений</param>
+       internal void Factorial(int value1, int value2, FactorialType[] factorialTypesArrey )
         {
             Dictionary<int, BigInteger> factorialDictionary = new Dictionary<int, BigInteger>();
 
@@ -21,12 +26,8 @@ namespace ParallelCalculationFactorial.OrdinaryFactorial
                 {
                       FactorialNumber = FactorialNumber *(BigInteger)j;
                 }
-                
-                factorialDictionary.Add(i, FactorialNumber);
-
+                factorialTypesArrey[i] = new FactorialType { FactorialKey = i, Factorial = FactorialNumber };
             }
-            return factorialDictionary;
-
         }
     }
 }
