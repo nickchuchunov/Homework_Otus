@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,26 +9,25 @@ namespace ParallelCalculationFactorial.OrdinaryFactorial
 {
     internal class OrdinsryFactorial
     {
-
-       internal Dictionary<int, ulong> Factorial(int value1, int value2 )
+        /// <summary>
+        /// считаем  фактриал последовательно
+        /// </summary>
+        /// <param name="value1"> значение начала диаапазано</param>
+        /// <param name="value2">значение конца диапазона</param>
+        /// <param name="factorialTypesArrey">массив в который записываем результат вычислений</param>
+       internal void Factorial(int value1, int value2, FactorialType[] factorialTypesArrey )
         {
-            Dictionary<int, ulong> factorialDictionary = new Dictionary<int, ulong>();
-
-            
+            Dictionary<int, BigInteger> factorialDictionary = new Dictionary<int, BigInteger>();
 
             for (int i = value1; i< value2; i++) 
             {
-                ulong FactorialNumber = 1;
+                BigInteger FactorialNumber = 1;
                 for (int j = 1; j < i; j++)
                 {
-                      FactorialNumber = FactorialNumber *(ulong)j;
+                      FactorialNumber = FactorialNumber *(BigInteger)j;
                 }
-                
-                factorialDictionary.Add(i, FactorialNumber);
-
+                factorialTypesArrey[i] = new FactorialType { FactorialKey = i, Factorial = FactorialNumber };
             }
-            return factorialDictionary;
-
         }
     }
 }

@@ -2,30 +2,31 @@
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
+using ParallelCalculationFactorial.OrdinaryFactorial;
 using ParallelCalculationFactorial.FactorialParallelTreads;
 
 namespace ParallelCalculationFactorial.FactorialParallelPLINQ
 {
     internal class FactorialParallelPLINQ
     {
-
-        internal ConcurrentDictionary<int, ulong> dictionaryFactorial;
-
-        Factorial factorial;
-        delegate void delegatFactorial(int value, ConcurrentDictionary<int, ulong> dictionary );
-       
+        FactorialType[] factorialTypesArrey; // записываем результат вычисления в массив 
         internal FactorialParallelPLINQ()
         {   
-            dictionaryFactorial = new ConcurrentDictionary<int, ulong>();
-            factorial = new Factorial();
+            
+
         }
 
-
-      internal void  FactorialForPlinq(int value1, int value2) 
+      internal async void  FactorialForPlinq(int value1, int value2) 
         {
-            Parallel.For(value1, value2, (i) => factorial.FactorialAddConcurrentDictionary(i, dictionaryFactorial));
+            factorialTypesArrey = new FactorialType[value2];
+            OrderablePartitioner<Tuple<int, int>> t = Partitioner.Create(value1, value2, 10); //разделяем диапазон вычесления для патоков
+            IList<IEnumerator<Tuple<int, int>>> t1 = t.GetPartitions(1);
+
+            await Parallel.ForEachAsync(t1, async (item, cancellationToken) => { while (item.MoveNext()) { new OrdinsryFactorial().Factorial(item.Current.Item1, item.Current.Item2, factorialTypesArrey); } } ); //new OrdinsryFactorial().Factorial(item.Current.Item1, item.Current.Item2, factorialTypesArrey)
+
         }
     }
 }
